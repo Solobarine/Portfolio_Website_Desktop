@@ -103,7 +103,6 @@ header {
   display: block;
   float: left;
   text-decoration: none;
-  animation: fade-in 5s;
 }
 
 .topnav a:not(:first-child) {
@@ -133,18 +132,18 @@ header {
      padding: 0;
      margin: 0;
   }
-
+  
   #intro_word {
     grid-area: intro_word;
     height: 382px;
     padding: 0;
   }
-
+  
   #social {
     grid-area: social;
     margin-top: 0;
   }
-
+  
 }
 
 .fa-bars {
@@ -212,7 +211,7 @@ header {
 }
 
 #social {
-
+  
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -326,10 +325,6 @@ header {
   margin: 20px 0;
   background-repeat: no-repeat;
   width: 327px;
-}
-
-.pro_div:hover {
-  transform: scale(1.5);
 }
 
 #card1 {
@@ -737,7 +732,7 @@ header {
   justify-content: center;
   margin: 25px 0;
 }
-
+  
 }
 
 @media only screen and (min-width: 992px) {
@@ -749,7 +744,7 @@ header {
     background-position: 100% 110%;
     background-image: url("./media/illustration-header.svg");
   }
-
+  
   #headline-container {
     margin-top: 290px;
   }
@@ -780,7 +775,7 @@ header {
   #form {
     margin-right: 100px;
   }
-
+  
   #social {
     grid-area: social;
     margin-top: 180px;
@@ -799,14 +794,5 @@ header {
 
   #resume-button {
     margin-top: 0;
-  }
-}
-
-@keyframes fade-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 100%;
   }
 }
