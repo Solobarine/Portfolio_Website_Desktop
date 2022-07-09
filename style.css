@@ -126,20 +126,20 @@ header {
   .topnav a.bars {
     display: none;
   }
-  
-     #opening {
-         display: grid;
-         grid-template-areas: 'intro_word' 'social';
-         padding: 0;
-         margin: 0;
-}
-  
+
+   #opening {
+     display: grid;
+     grid-template-areas: 'intro_word' 'social';
+     padding: 0;
+     margin: 0;
+  }
+
   #intro_word {
     grid-area: intro_word;
     height: 382px;
     padding: 0;
   }
-  
+
   #social {
     grid-area: social;
     margin-top: 0;
