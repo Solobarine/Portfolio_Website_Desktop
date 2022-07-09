@@ -127,11 +127,11 @@ header {
     display: none;
   }
 
-     #opening {
-         display: grid;
-         grid-template-areas: 'intro_word' 'social';
-         padding: 0;
-         margin: 0;
+  #opening {
+    display: grid;
+    grid-template-areas: 'intro_word' 'social';
+    padding: 0;
+    margin: 0;
   }
 
   #intro_word {
@@ -705,10 +705,10 @@ header {
   }
 
   #bottom-social {
-     display: flex;
-     flex-direction: row;
-     justify-content: center;
-     margin: 25px 0;
+         display: flex;
+         flex-direction: row;
+         justify-content: center;
+         margin: 25px 0;
   }
 }
 
@@ -725,9 +725,10 @@ header {
   #headline-container {
     margin-top: 290px;
   }
-   #intro_word {
-       grid-area: intro_word;
-       margin-top: 80px;
+  
+  #intro_word {
+    grid-area: intro_word;
+    margin-top: 80px;
   }
 
   #recent-img {
