@@ -722,7 +722,7 @@ header {
     flex-direction: row;
     justify-content: center;
     margin: 25px 0;
-}
+  }
 }
 
 @media only screen and (min-width: 992px) {
@@ -742,12 +742,12 @@ header {
   #intro_word {
     grid-area: intro_word;
     margin-top: 80px;
-}
+  }
   
- #recent-img {
-   width: 654px;
-   height: 474px;
- }
+  #recent-img {
+    width: 654px;
+    height: 474px;
+  }
 
   #about_section {
     background-image: url("./media/illustration-about-me.svg");
@@ -793,7 +793,7 @@ header {
 
   #intro_word {
     grid-area: intro_word;
-    margin-top: 50px; 
+    margin-top: 50px;
  }
 
   #social {
@@ -817,7 +817,7 @@ header {
     justify-content: center;
     margin: 25px 0;
   }
-  
+
   #mess {
     display: none;
   }
