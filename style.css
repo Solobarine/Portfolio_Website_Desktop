@@ -103,7 +103,6 @@ header {
   display: block;
   float: left;
   text-decoration: none;
-  animation: fade-in 5s;
 }
 
 .topnav a:not(:first-child) {
@@ -133,18 +132,18 @@ header {
      padding: 0;
      margin: 0;
   }
-
+  
   #intro_word {
     grid-area: intro_word;
     height: 382px;
     padding: 0;
   }
-
+  
   #social {
     grid-area: social;
     margin-top: 0;
   }
-
+  
 }
 
 .fa-bars {
@@ -152,14 +151,13 @@ header {
 }
 
 #opening {
- display: flex;
- flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 8fr;
+  grid-template-areas: 'social introd';
   height: 590px;
-  padding: 0 24px;
+  padding: 0;
   background-color: #1c1a19;
-  background-image: url("./media/illustration-header-mobile.svg");
   background-repeat: no-repeat;
-  background-position: 100% 125%;
 }
 
 #headline-container {
@@ -178,7 +176,6 @@ header {
 }
 
 #title {
-  grid-area: title;
   font-family: "Crete Round", sans-serif;
   font-size: 56px;
   font-weight: 400;
@@ -189,8 +186,11 @@ header {
   color: #ff6b00;
 }
 
+#intro_word {
+  grid-area: introd;
+  margin-top: 80px;
+}
 #job {
-  grid-area: job;
   font-family: "Roboto", sans-serif;
   font-size: 24px;
   font-weight: 700;
@@ -200,7 +200,6 @@ header {
 }
 
 #description {
-  grid-area: description;
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -212,11 +211,12 @@ header {
 }
 
 #social {
-
+  grid-area: social;
   display: flex;
   align-items: center;
   flex-direction: row;
   justify-content: flex-start;
+  margin-top: 150px;
 }
 
 .social-icons {
@@ -326,10 +326,6 @@ header {
   margin: 20px 0;
   background-repeat: no-repeat;
   width: 327px;
-}
-
-.pro_div:hover {
-  transform: scale(1.5);
 }
 
 #card1 {
@@ -606,10 +602,6 @@ header {
 }
 
 @media only screen and (min-width: 768px) {
-  #opening {
-    background-position: 100% 110%;
-  }
-
   #headline-container {
     flex-direction: row;
     align-items: center;
@@ -737,7 +729,7 @@ header {
   justify-content: center;
   margin: 25px 0;
 }
-
+  
 }
 
 @media only screen and (min-width: 992px) {
@@ -747,9 +739,9 @@ header {
     grid-template-areas: 'social intro_word';
     height: 870px;
     background-position: 100% 110%;
-    background-image: url("./media/illustration-header.svg");
+    background-image: url("./image/header.svg");
   }
-
+  
   #headline-container {
     margin-top: 290px;
   }
@@ -769,7 +761,7 @@ header {
   }
 
   #about_section {
-    background-image: url("./media/illustration-about-me.svg");
+    background-image: url("./image/about-me.svg");
     background-position: 100% 25%;
   }
 
@@ -780,7 +772,7 @@ header {
   #form {
     margin-right: 100px;
   }
-
+  
   #social {
     grid-area: social;
     margin-top: 180px;
@@ -802,11 +794,30 @@ header {
   }
 }
 
-@keyframes fade-in {
-  from {
-    opacity: 0;
+@media only screen and (max-width: 768px) {
+  #opening {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 'intro_word' 'social';
   }
-  to {
-    opacity: 100%;
+  
+  #intro_word {
+    grid-area: intro_word;
+    margin-top: 20px;
+  }
+  
+  #social {
+    grid-area: social;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    padding: 0;
+    align-items: flex-start;
+  }
+  #bottom_socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
 }
