@@ -126,12 +126,13 @@ header {
   .topnav a.bars {
     display: none;
   }
-   #opening {
-     display: grid;
-     grid-template-areas: 'intro_word' 'social';
-     padding: 0;
-     margin: 0;
-  }
+  
+     #opening {
+         display: grid;
+         grid-template-areas: 'intro_word' 'social';
+         padding: 0;
+         margin: 0;
+}
   
   #intro_word {
     grid-area: intro_word;
@@ -175,17 +176,6 @@ header {
   margin-top: 120px;
 }
 
-#title {
-  font-family: "Crete Round", sans-serif;
-  font-size: 56px;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 64px;
-  margin-bottom: 6px;
-  letter-spacing: 0.37px;
-  color: #ff6b00;
-}
-
 #intro_word {
   grid-area: introd;
   margin-top: 80px;
@@ -197,17 +187,6 @@ header {
   font-style: normal;
   line-height: 32px;
   color: #fff5e1;
-}
-
-#description {
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 24px;
-  margin: 12px 0;
-  color: #fff;
-  max-width: 327px;
 }
 
 #social {
@@ -773,12 +752,12 @@ header {
     margin-right: 100px;
   }
   
-  #social {
-    grid-area: social;
-    margin-top: 180px;
-    margin-left: 0;
+    #social {
+        grid-area: social;
+        margin-top: 180px;
+        margin-left: 0;
   }
-}
+ }
 
 @media only screen and (min-width: 1200px) {
   #description {
