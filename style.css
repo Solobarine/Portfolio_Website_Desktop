@@ -172,7 +172,13 @@ header {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  margin-top: 120px;
+  margin-top: 24px;
+  font-family: 'Poppins', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 24px;
+  color: #fff;
 }
 
 #intro_word {
@@ -181,6 +187,7 @@ header {
 }
 
 #job {
+  margin-top: 15px;
   font-family: "Roboto", sans-serif;
   font-size: 24px;
   font-weight: 700;
@@ -192,10 +199,9 @@ header {
 #social {
   grid-area: social;
   display: flex;
-  align-items: center;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: flex-start;
-  margin-top: 150px;
+  margin-top: 120px;
 }
 
 .social-icons {
@@ -580,7 +586,86 @@ header {
   color: #505f79;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
+  #opening {
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    grid-template-areas: 'social intro_word';
+    height: 870px;
+    background-position: 100% 110%;
+    background-image: url("./image/header.svg");
+  }
+
+  #headline-container {
+    margin-top: 290px;
+  }
+
+  #intro_word {
+    grid-area: intro_word;
+    margin-top: 80px;
+  }
+
+  #recent-img {
+    width: 654px;
+    height: 474px;
+  }
+
+  #about_section {
+    background-image: url("./image/about-me.svg");
+    background-position: 100% 25%;
+  }
+
+  #contact > p {
+    margin-left: 100px;
+  }
+
+  #form {
+    margin-right: 100px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #description {
+    max-width: 566px;
+  }
+
+  #about {
+    max-width: 566px;
+  }
+
+  #resume-button {
+    margin-top: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #opening {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 'intro_word' 'social';
+  }
+
+  #intro_word {
+    grid-area: intro_word;
+    margin-top: 20px;
+  }
+
+  #social {
+    grid-area: social;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    padding: 0;
+    align-items: flex-start;
+  }
+
+  #bottom_socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  {
   #headline-container {
     flex-direction: row;
     align-items: center;
@@ -709,86 +794,5 @@ header {
     flex-direction: row;
     justify-content: center;
     margin: 25px 0;
-  }
-}
-
-@media only screen and (min-width: 992px) {
-  #opening {
-    display: grid;
-    grid-template-columns: 1fr 10fr;
-    grid-template-areas: 'social intro_word';
-    height: 870px;
-    background-position: 100% 110%;
-    background-image: url("./image/header.svg");
-  }
-
-  #headline-container {
-    margin-top: 290px;
-  }
-
-  #intro_word {
-    grid-area: intro_word;
-    margin-top: 80px;
-  }
-
-  #recent-img {
-    width: 654px;
-    height: 474px;
-  }
-
-  #about_section {
-    background-image: url("./image/about-me.svg");
-    background-position: 100% 25%;
-  }
-
-  #contact > p {
-    margin-left: 100px;
-  }
-
-  #form {
-    margin-right: 100px;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  #description {
-    max-width: 566px;
-  }
-
-  #about {
-    max-width: 566px;
-  }
-
-  #resume-button {
-    margin-top: 0;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  #opening {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: 'intro_word' 'social';
-  }
-
-  #intro_word {
-    grid-area: intro_word;
-    margin-top: 20px;
-  }
-
-  #social {
-    grid-area: social;
-    display: flex;
-    flex-direction: row;
-    margin-top: 20px;
-    padding: 0;
-    align-items: flex-start;
-  }
-
-  #bottom_socials {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
   }
 }
