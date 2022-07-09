@@ -743,7 +743,7 @@ header {
     grid-area: intro_word;
     margin-top: 80px;
   }
-  
+
   #recent-img {
     width: 654px;
     height: 474px;
@@ -794,7 +794,7 @@ header {
   #intro_word {
     grid-area: intro_word;
     margin-top: 50px;
- }
+  }
 
   #social {
     grid-area: social;
