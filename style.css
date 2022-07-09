@@ -144,7 +144,6 @@ header {
     grid-area: social;
     margin-top: 0;
   }
-  
 }
 
 .fa-bars {
@@ -180,6 +179,7 @@ header {
   grid-area: introd;
   margin-top: 80px;
 }
+
 #job {
   font-family: "Roboto", sans-serif;
   font-size: 24px;
@@ -567,7 +567,7 @@ header {
   border: 1px solid #dfe1e6;
 }
 
-#bottom-socials {
+#bottom-s {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -697,18 +697,18 @@ header {
   #form {
     align-items: flex-start;
   }
-  
+
   #bottom_socials {
     display: flex;
     flex-direction: row;
     justify-content: center;
   }
-  
+
   #bottom-social {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      margin: 25px 0;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          margin: 25px 0;
   }
 }
 
@@ -727,12 +727,8 @@ header {
   }
 
   #intro_word {
-      grid-area: intro_word;
-      margin-top: 80px;
-  }
-
-  #social {
-      grid-area: social;
+       grid-area: intro_word;
+       margin-top: 80px;
   }
 
   #recent-img {
@@ -789,7 +785,7 @@ header {
     padding: 0;
     align-items: flex-start;
   }
-  
+ 
   #bottom_socials {
     display: flex;
     flex-direction: row;
