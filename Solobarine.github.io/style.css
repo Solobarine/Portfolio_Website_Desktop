@@ -107,7 +107,6 @@ header {
   .topnav .bars {
     display: none;
   }
-
   .topnav a:not(:first-child) {
     display: block;
   }
@@ -145,7 +144,7 @@ header {
   height: 480px;
   padding: 0;
   background-color: #1c1a19;
-  background-image: url("./media/illustration-header-mobile.svg");
+  background-image: url("./image/Desktop.png");
   background-repeat: no-repeat;
   background-position: 100% 125%;
 }
@@ -784,6 +783,21 @@ header {
 }
 
 @media only screen and (max-width: 768px) {
+  #logo {
+    display: block;
+    float: left;
+  }
+  
+  #mess {
+    display: none;
+  }
+  
+  #bars {
+    display: block;
+    float: right;
+  }
+  
+  
   #opening {
     display: grid;
     grid-template-columns: 1fr;
@@ -816,9 +830,5 @@ header {
     flex-direction: row;
     justify-content: center;
     margin: 25px 0;
-  }
-
-  #mess {
-    display: none;
   }
 }
