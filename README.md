@@ -17,5 +17,5 @@ Solobarine)
 ### Acknowledgements
 * To My Sibling who have been a support to me.
 ### Show your Support
-*Give a ⭐️ if you liked my Portfolio
-*Give a ⭐️ if you liked my Website
+* Give a ⭐️ if you liked my Portfolio
+* Give a ⭐️ if you liked my Website
