@@ -45,4 +45,3 @@ contact.addEventListener('click', function(){
         page.className = '';
     }
     });
-    
