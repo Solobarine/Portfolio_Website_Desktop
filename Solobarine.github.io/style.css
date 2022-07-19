@@ -32,6 +32,14 @@ header {
   header {
     padding: 0 100px;
   }
+  
+  #bars {
+    display: none;
+  }
+  
+  .pop-up {
+    display: none;
+  }
 }
 
 .button {
@@ -100,7 +108,7 @@ header {
 
 .topnav a.bars {
   float: right;
-  display: block;
+  display: none;
 }
 
 @media only screen and (min-width: 768px) {
@@ -797,12 +805,22 @@ header {
     float: right;
   }
   
+  .the-nav1 {
+      color: #fff5e1;
+      padding: 20px;
+  }
+  
+  .the-nav2 {
+      color: #fff5e1;
+      padding: 20px;
+  }
   
   #opening {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: 'intro_word' 'social';
+    padding-left: 24px;
   }
 
   #intro_word {
@@ -831,4 +849,61 @@ header {
     justify-content: center;
     margin: 25px 0;
   }
+  
+.pop-menu {
+  width: auto;
+  background: #1c1a19;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.pop {
+  display: none;
+}
+
+#close {
+  float: right;
+  margin-top: 15px;
+  margin-right: 15px;
+  width: 45px;
+  height: 45px;
+}
+
+.nav-tools {
+  font-family: 'Inter', sans-serif;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff5e1;
+  list-style: none;
+  width: 270px;
+  margin-top: 30px;
+  border-bottom: 1px solid #ccc;
+  overflow-y: hidden;
+}
+
+.first-tool {
+  padding-top: 60px;
+}
+
+li a:link {
+  text-decoration: none;
+}
+
+li a:visted {
+  text-decoration: none;
+}
+
+.navigation {
+  background: #1c1a19;
+  padding: 20px;
+}
+
+.the-nav3 {
+  padding: 20px;
+  color: #fff5e1;
+}
+
+.space {
+  height: 250px;
+}
 }

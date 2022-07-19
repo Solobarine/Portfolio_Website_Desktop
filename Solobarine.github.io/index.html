@@ -16,14 +16,24 @@
   <div id="container">
    <header>
       <div class="topnav" id="myTopnav">
+         <a id="bars" onclick="" href="#"><i class="fa fa-bars"></i></a>
         <a id="mess" href="#"><img src="./image/Union.png" alt="Message Icon" /></a>
         <a id="logo" href="#">Akpuru Solomon</a>
         <a href="#works" class="active">Portfolio</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
-        <a id="bars" href="#"><i class="fa fa-bars"></i></a>
+    
       </div>
     </header>
+    <div class="pop-up pop" id="pop-menu">
+  <button id="close" onclick="closeWindow()"><img class="img-button" src="./image/cancel-btn.png" alt="Close Window Button" /></button>
+  <ul class="navigation">
+    <li class="nav-tools first-tool hide" ><a class="the-nav1" href="#work">Portfolio</a></li>
+    <li class="nav-tools hide"><a class="the-nav2" href="#about_section">About</a></li>
+    <li class="nav-tools hide"><a class="the-nav3" href="#contact">Contact</a></li>
+    <div class="space"></div>
+  </ul>
+</div>
     <section id="opening">
       <div id="intro_word">
       <h1 id="title">Hey There. I’m Solomon</h1>
@@ -191,6 +201,7 @@
       </ul>
     </footer>
   </div>
+   <script src="portfolio.js" type="text/javascript" charset="utf-8"></script>
 </body>
 
 </html>
