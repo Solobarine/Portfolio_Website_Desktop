@@ -1,4 +1,5 @@
-let open = document.querySelector("#bars");
+// Menu Section
+let open = document.querySelector('#bars');
 let imgButton = document.querySelector(".img-button");
 let page = document.querySelector(".pop-up");
 let portfolio = document.querySelector(".the-nav1");
@@ -45,3 +46,4 @@ contact.addEventListener('click', function(){
         page.className = '';
     }
     });
+    

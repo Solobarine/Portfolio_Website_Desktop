@@ -94,7 +94,7 @@ header {
   color: black;
 }
 
-.topnav a.logo {
+.logo {
   font-size: 20px;
   font-weight: 700;
   display: block;
@@ -316,25 +316,17 @@ header {
 
 .pro_div {
   display: grid;
-  align-items: end;
+  align-items: flex-end;
   height: 386px;
   margin: 20px 0;
   background-repeat: no-repeat;
   width: 327px;
 }
 
-#card1 {
-  background-image: url("./image/pro.png");
-  background-size: 327px 386px;
-}
-
+#card1,
 #card2,
 #card4,
-#card6 {
-  background-image: url("./image/pro.png");
-  background-size: 327px 386px;
-}
-
+#card6,
 #card3,
 #card5 {
   background-image: url("./image/pro.png");
@@ -364,7 +356,7 @@ header {
   padding: 0 10px;
 }
 
-.pro-tags {
+.pro_tags {
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -372,7 +364,7 @@ header {
   gap: 12px;
 }
 
-.pro-tags > span {
+.pro_tags > span {
   font-family: "Inter", sans-serif;
   font-size: 14px;
   font-weight: 500;
@@ -390,7 +382,7 @@ header {
   background-color: rgb(214, 214, 214);
 }
 
-.pro-tags > span:hover {
+.pro_tags > span:hover {
   background-color: rgb(214, 214, 214);
 }
 
@@ -906,4 +898,5 @@ li a:visted {
 .space {
   height: 250px;
 }
+
 }
