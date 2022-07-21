@@ -219,18 +219,23 @@ header {
     padding: 10px;
     color: #dbd8d7;
 }
-.project {
-  position: fixed;
-   z-index: 999;
-}
+
 .show {
-  display: none;
- 
+  width: 100%;
+  height: 100%;
+  z-index: 999;
   position: fixed;
+  background-color: rgba(56, 56, 56, 0.74);
+}
+
+.show-inactive {
+  display: none;
 }
 
 
 .featured-item {
+    position: fixed;
+    margin: 100px;
     width: auto;
     padding: 3%;
     max-height: 500px;

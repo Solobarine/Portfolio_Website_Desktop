@@ -56,7 +56,7 @@ contact.addEventListener('click', function(){
 };
 
 //Create Dynamic Page
-const grand = document.querySelector('.show');
+const grand = document.querySelector('.show-inactive');
 const parent = document.querySelector('.featured-item');
 const exit = document.createElement('button');
 let heading = document.createElement('h2');
@@ -138,7 +138,7 @@ const btn0 = document.querySelector('#btn-0');
 const parent = document.querySelector('#featured-item');
 btn0.addEventListener('click', function(){
   if(grand.className === 'show'){
-    grand.className = '';
+    grand.className = 'show-inactive';
   }else{
     grand.className = 'show';
   }
