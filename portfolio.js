@@ -76,7 +76,7 @@ const btn2 = document.querySelector('.btn-2');
 const btn3 = document.querySelector('.btn-3');
 const btn4 = document.querySelector('.btn-4');
 const btn5 = document.querySelector('.btn-5');
-const btn6 = document.querySelector('btn-6');
+const btn6 = document.querySelector('.btn-6');
 const proCon = document.querySelector('.show')
 //Web Object
 
@@ -105,7 +105,7 @@ parent.appendChild(li);
 li.className = 'skills';
 
 //Append Project Image
-project.innerHTML = '<img class="project-image" src="portfolio-snapshot.png"/>';
+project.innerHTML = '<img class="project-image" src="./image/portfolio-snapshot.png"/>';
 project.className = 'pro-image';
 parent.appendChild(project);
 
@@ -126,11 +126,11 @@ source.className = 'pop-button-s'
 
 //Append Image to live
 live.appendChild(liveImg);
-liveImg.innerHTML ='<img class="l-img" src="live-img.png"/>';
+liveImg.innerHTML ='<img class="l-img" src="./image/live-img.png"/>';
 
 //Append Image to source
 source.appendChild(sourceImg);
-sourceImg.innerHTML = '<img class="s-img" src="github.png"/>';
+sourceImg.innerHTML = '<img class="s-img" src="./image/github.png"/>';
 
 //Event Listener for btn0
 function clickMe(){
@@ -146,8 +146,67 @@ btn0.addEventListener('click', function(){
 }
 
 //Make Modal disappear
+exit.addEventListener('click', function(){
+  if(grand.className === 'show-inactive'){
+    grand.className = 'show';
+  }else{
+    grand.className = 'show-inactive';
+  }
+})
 
+//Event Listener for Button 1
+btn1.addEventListener('click', function(){
+  if(grand.className === 'show-inactive'){
+    grand.className = 'show';
+  }else{
+    grand.className = 'show-inactive';
+  }
+});
 
+//Event Listener for Button 2
+btn2.addEventListener('click', function(){
+  if(grand.className === 'show-inactive'){
+    grand.className = 'show';
+  }else{
+    grand.className = 'show-inactive';
+  }
+})
+
+//Event Listener for Button 3
+btn3.addEventListener('click', function(){
+  if(grand.className === 'show-inactive'){
+    grand.className = 'show';
+  }else{
+    grand.className = 'show-inactive';
+  }
+})
+
+//Button 4 Event Listener
+btn4.addEventListener('click', function(){
+  if(grand.className === 'show-inactive'){
+    grand.className = 'show';
+  }else{
+    grand.className = 'show-inactive';
+  }
+})
+
+//Button 5
+btn5.addEventListener('click', function(){
+  if(grand.className === 'show-inactive'){
+    grand.className = 'show';
+  }else{
+    grand.className = 'show-inactive';
+  }
+})
+
+//Button 6 
+btn6.addEventListener('click', function(){
+  if(grand.className === 'show-inactive'){
+    grand.className = 'show';
+  }else{
+    grand.className = 'show-inactive';
+  }
+})
 
     //Validation for Contact Section
 const form = document.getElementById('#form');

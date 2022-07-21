@@ -234,11 +234,11 @@ header {
 
 
 .featured-item {
-    position: fixed;
-    margin: 100px;
+    
+    margin: 50px;
     width: auto;
     padding: 3%;
-    max-height: 500px;
+    max-height: 650px;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(10, 1fr);
@@ -1035,4 +1035,35 @@ li a:visted {
 .space {
   height: 250px;
 }
+
+.featured-item {
+  display: flex;
+  flex-direction: column;
+  margin: 25px;
+  max-height: 700px;
+}
+
+.pop-title {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400px;
+}
+
+.exit {
+  float: right;
+}
+
+.skills {
+  font-size: 12px;
+}
+
+.pro-image {
+   width: 200px;
+   height: 150px;
+}
+
+.short-summary {
+  font-size: 16px;
+}
+
 }
