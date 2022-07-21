@@ -187,8 +187,9 @@
       <form id="form" action="https://formspree.io/f/xwkydlkr" method="post">
         <input name="user_name" id="name" type="text" placeholder="Enter your Name" maxlength="30" required />
         <input name="user_email" id="email" type="email" placeholder="Enter your Email address" required />
-        <textarea name="user_msg" id="msg" placeholder="Enter comments here" required maxlength="500"></textarea>
-        <button class="button" type="submit">Get in touch</button>
+        <textarea name="user_msg" id="msg" placeholder="Enter comments here" maxlength="500"></textarea>
+        <button class="button sub-button" onclick="inspectInputs()" type="submit">Get in touch</button>
+        <small id="error">Please, your email should be in lower case.</small>
       </form>
     </section>
     <footer id="foot">

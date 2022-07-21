@@ -45,3 +45,11 @@ contact.addEventListener('click', function(){
         page.className = '';
     }
     });
+    
+    //Validation for Contact Section
+const form = document.getElementById('#form');
+const mail = document.getElementById('email');
+const contactButton = document.querySelector('.sub-button');
+const msg = document.querySelector('#error');
+    
+contactButton.addEventListener('submit', inspectInputs);
