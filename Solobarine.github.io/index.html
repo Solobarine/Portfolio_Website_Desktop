@@ -13,6 +13,9 @@
   <title>Akpuru Solomon Website</title>
 </head>
 <body>
+   <div class="show">
+    <div class="featured-item" ></div>
+    </div>
   <div id="container">
    <header>
       <div class="topnav" id="myTopnav">
@@ -28,9 +31,9 @@
     <div class="pop-up pop" id="pop-menu">
   <button id="close" onclick="closeWindow()"><img class="img-button" src="./image/cancel-btn.png" alt="Close Window Button" /></button>
   <ul class="navigation">
-    <li class="nav-tools first-tool hide" ><a class="the-nav1" href="#works">Portfolio</a></li>
-    <li class="nav-tools hide"><a class="the-nav2" href="#about_section">About</a></li>
-    <li class="nav-tools hide"><a class="the-nav3" href="#contact">Contact</a></li>
+    <li class="nav-tools first-tool" ><a class="the-nav1" href="#work">Portfolio</a></li>
+    <li class="nav-tools"><a class="the-nav2" href="#about_section">About</a></li>
+    <li class="nav-tools"><a class="the-nav3" href="#contact">Contact</a></li>
     <div class="space"></div>
   </ul>
 </div>
@@ -49,12 +52,11 @@
         <li><a href=""><i class="social-icons fa-brands fa-microverse"></i><img src="./image/social_media/Vector_m.png" alt="my m handle" width="20" height="20"></a></li>
       </ul>
     </section>
-
     <section id="work">
       <h2 id="work_title">My Recent Works</h2>
 
       <div id="projects">
-
+        
         <div id="frames">
           <div id="recent-img"><img src="./image/recent.png" alt="My main project"></div>
           <h3 class="stories">Multi-Post Stories</h3>
@@ -65,10 +67,13 @@
             <span>Bootstrap</span>
             <span>Ruby</span>
           </div>
-          <div><button class="button mainp-see" type="button">See project</button></div>
+          <div><button id="btn-0" class="button mainp-see" onclick="clickMe()" type="button">See project</button></div>
         </div>
 
         <div id="grid">
+           <div class="show">
+    <div class="featured-item" ></div>
+    </div>
           <div class="pro_div" id="card1">
             <h3>Profesional Art Printing Data</h3>
             <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
@@ -78,9 +83,12 @@
               <span>Bootstrap</span>
               <span>Ruby</span>
             </div>
-            <button class="button pro_button" type="button">See project</button>
+            <button onclick="clickMe()" class="btn-1 button pro_button" type="button">See project</button>
           </div>
 
+           <div class="show">
+           <div class="featured-item" ></div>
+            </div>
           <div class="pro_div" id="card2">
             <h3>Profesional Art Printing Data</h3>
             <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
@@ -90,9 +98,12 @@
               <span>Bootstrap</span>
               <span>Ruby</span>
             </div>
-            <button class="button pro_button" type="button">See project</button>
+            <button class="btn-2 button pro_button" type="button">See project</button>
           </div>
 
+             <div class="show">
+          <div class="featured-item" ></div>
+          </div>
           <div class="pro_div" id="card3">
             <h3>Profesional Art Printing Data</h3>
             <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
@@ -102,9 +113,12 @@
               <span>Bootstrap</span>
               <span>Ruby</span>
             </div>
-            <button class="button pro_button" type="button">See project</button>
+            <button class="btn-3 button pro_button" type="button">See project</button>
           </div>
 
+             <div class="show">
+              <div class="featured-item" ></div>
+            </div>
           <div class="pro_div" id="card4">
             <h3>Profesional Art Printing Data</h3>
             <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
@@ -114,9 +128,12 @@
               <span>Bootstrap</span>
               <span>Ruby</span>
             </div>
-            <button class="button pro_button" type="button">See project</button>
+            <button class="btn-4 button pro_button" type="button">See project</button>
           </div>
 
+             <div class="show">
+            <div class="featured-item" ></div>
+            </div>
           <div class="pro_div" id="card5">
             <h3>Profesional Art Printing Data</h3>
             <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
@@ -126,9 +143,12 @@
               <span>Bootstrap</span>
               <span>Ruby</span>
             </div>
-            <button class="button pro_button" type="button">See project</button>
+            <button class="btn-5 button pro_button" type="button">See project</button>
           </div>
 
+             <div class="show">
+              <div class="featured-item" ></div>
+              </div>
           <div class="pro_div" id="card6">
             <h3>Profesional Art Printing Data</h3>
             <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
@@ -138,7 +158,7 @@
               <span>Bootstrap</span>
               <span>Ruby</span>
             </div>
-            <button class="button pro_button" type="button">See project</button>
+            <button class="btn-6 button pro_button" type="button">See project</button>
           </div>
         </div>
       </div>

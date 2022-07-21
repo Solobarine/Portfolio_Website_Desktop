@@ -209,16 +209,136 @@ header {
 }
 
 #social {
-  grid-area: social;
-  align-items: center;
-  margin-top: 150px;
+    grid-area: social;
+    align-items: center;
+    margin-top: 150px;
 }
 
 .social-icons {
-  font-size: 24px;
-  padding: 10px;
-  color: #dbd8d7;
+    font-size: 24px;
+    padding: 10px;
+    color: #dbd8d7;
 }
+.project {
+  position: fixed;
+   z-index: 999;
+}
+.show {
+  display: none;
+ 
+  position: fixed;
+}
+
+
+.featured-item {
+    width: auto;
+    padding: 3%;
+    max-height: 500px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    grid-gap: 5px;
+    background: white;
+}
+
+.pop-title {
+    font-family: 'Crete Round', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+    color: #172b4d;
+    grid-area: 1/1/span 2/span 9;
+}
+
+.exit {
+    background: #fff;
+    margin-top: 5px;
+    grid-area: 1/12/span 1/span 1;
+    border: none;
+}
+
+.skills {
+    width: 294px;
+    display: grid;
+    grid-template-columns: 1fr 1.3fr 1.7fr;
+    grid-gap: 5px;
+    grid-area: 3/1/span 2/span 4;
+}
+
+.pop-lists {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #3c3a39;
+    list-style: none;
+}
+
+.pro-image {
+    margin-left: 24px;
+    display: block;
+    background: blue;
+    grid-area: 4/1/span 6/span 6;
+}
+/*-image {
+     width: 580px;
+     height: 440px;
+}
+*/
+
+.short-summary {
+font-family: 'Inter', sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 30px;
+color: #344563;
+grid-area: 4/7/span 3/span 7;
+}
+
+.pop-button-l {
+width: 134px;
+height: 48px;
+padding: 12px;
+font-family: 'Inter', sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 17px;
+line-height: 24px;
+align-items: center;
+text-align: center;
+letter-spacing: 0.03em;
+color: #fff;
+background: #f55800;
+grid-area: 8/8/span 2/span 2;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+
+.pop-button-s {
+    width: 159px;
+    height: 48px;
+    padding: 12px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #fff;
+    background: #f55800;
+    grid-area: 8/10/span 2/span 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
 
 #work {
   display: flex;
@@ -316,7 +436,6 @@ header {
 
 .pro_div {
   display: grid;
-  align-items: end;
   height: 386px;
   margin: 20px 0;
   background-repeat: no-repeat;
