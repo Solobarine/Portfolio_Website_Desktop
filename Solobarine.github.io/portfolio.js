@@ -196,7 +196,7 @@ btn5.addEventListener('click', function(){
     grand.className = 'show';
   }else{
     grand.className = 'show-inactive';
-  }
+ }
 })
 
 //Button 6 
@@ -217,7 +217,7 @@ const theEmail = document.getElementById('email');
 const theMsg = document.getElementById('msg');
 
 localStorage.setItem('data', JSON.stringify(dataStorage));
-}
+
 theName.addEventListener('input', storage);
 theEmail.addEventListener('input', storage);
 theMsg.addEventListener('input', storage);
