@@ -5,7 +5,7 @@ const portfolio = document.querySelector('.the-nav1');
 const about = document.querySelector('.the-nav2');
 const contact = document.querySelector('.the-nav3');
 
-open.addEventListener('click', function open() {
+open.addEventListener('click', () => {
   if (page.className === 'pop') {
     page.className = '';
   } else {
@@ -13,7 +13,7 @@ open.addEventListener('click', function open() {
   }
 });
 
-imgButton.addEventListener('click', function hide() {
+imgButton.addEventListener('click', () => {
   if (page.className === '') {
     page.className = 'pop';
   } else {
@@ -21,7 +21,7 @@ imgButton.addEventListener('click', function hide() {
   }
 });
 
-portfolio.addEventListener('click', function home() {
+portfolio.addEventListener('click', () => {
   if (page.className === '') {
     page.className = 'pop';
   } else {
@@ -29,15 +29,15 @@ portfolio.addEventListener('click', function home() {
   }
 });
 
-about.addEventListener('click', function home() {
+about.addEventListener('click', () => {
   if (page.className === '') {
     page.className = 'pop';
   } else {
     page.className = '';
   }
 });
-    
-contact.addEventListener('click', function home() {
+
+contact.addEventListener('click', () => {
   if (page.className === '') {
     page.className = 'pop';
   } else {
@@ -53,7 +53,7 @@ const projectItems = {
   liveButton: 'See Live',
   sourceButton: 'See Source',
 };
-const [var1 ,var2, var3] = projectItems.skillTag
+const [var1, var2, var3] = projectItems.skillTag;
 // Create Dynamic Page
 const grand = document.querySelector('.show-inactive');
 const parent = document.querySelector('.featured-item');
@@ -130,7 +130,7 @@ sourceImg.innerHTML = '<img class="s-img" src="./image/github.png"/>';
 
 // Event Listener for btn0
 const btn0 = document.querySelector('#btn-0');
-btn0.addEventListener('click', function clicky() {
+btn0.addEventListener('click', () => {
   if (grand.className === 'show') {
     grand.className = 'show-inactive';
   } else {
@@ -139,7 +139,7 @@ btn0.addEventListener('click', function clicky() {
 });
 
 // Make Modal disappear
-exit.addEventListener('click', function clicky() {
+exit.addEventListener('click', () => {
   if (grand.className === 'show-inactive') {
     grand.className = 'show';
   } else {
@@ -148,7 +148,7 @@ exit.addEventListener('click', function clicky() {
 });
 
 // Event Listener for Button 1
-btn1.addEventListener('click', function clicky() {
+btn1.addEventListener('click', () => {
   if (grand.className === 'show-inactive') {
     grand.className = 'show';
   } else {
@@ -157,7 +157,7 @@ btn1.addEventListener('click', function clicky() {
 });
 
 // Event Listener for Button 2
-btn2.addEventListener('click', function clicky() {
+btn2.addEventListener('click', () => {
   if (grand.className === 'show-inactive') {
     grand.className = 'show';
   } else {
@@ -166,7 +166,7 @@ btn2.addEventListener('click', function clicky() {
 });
 
 // Event Listener for Button 3
-btn3.addEventListener('click', function clicky() {
+btn3.addEventListener('click', () => {
   if (grand.className === 'show-inactive') {
     grand.className = 'show';
   } else {
@@ -175,7 +175,7 @@ btn3.addEventListener('click', function clicky() {
 });
 
 // Button 4 Event Listener
-btn4.addEventListener ('click', function clicky() {
+btn4.addEventListener('click', () => {
   if (grand.className === 'show-inactive') {
     grand.className = 'show';
   } else {
@@ -184,7 +184,7 @@ btn4.addEventListener ('click', function clicky() {
 });
 
 // Button 5
-btn5.addEventListener ('click', function clicky() {
+btn5.addEventListener('click', () => {
   if (grand.className === 'show-inactive') {
     grand.className = 'show';
   } else {
@@ -193,7 +193,7 @@ btn5.addEventListener ('click', function clicky() {
 });
 
 // Button 6
-btn6.addEventListener('click', function clicky() {
+btn6.addEventListener('click', () => {
   if (grand.className === 'show-inactive') {
     grand.className = 'show';
   } else {
