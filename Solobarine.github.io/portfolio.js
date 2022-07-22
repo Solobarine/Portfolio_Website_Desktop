@@ -5,7 +5,7 @@ const portfolio = document.querySelector('.the-nav1');
 const about = document.querySelector('.the-nav2');
 const contact = document.querySelector('.the-nav3');
 
-open.addEventListener('click', function() {
+open.addEventListener('click', function open() {
   if (page.className === 'pop') {
     page.className = '';
   } else {
@@ -13,7 +13,7 @@ open.addEventListener('click', function() {
   }
 });
 
-imgButton.addEventListener('click', function() {
+imgButton.addEventListener('click', function hide() {
   if (page.className === '') {
     page.className = 'pop';
   } else {
@@ -21,7 +21,7 @@ imgButton.addEventListener('click', function() {
   }
 });
 
-portfolio.addEventListener ('click', function() {
+portfolio.addEventListener('click', function home() {
   if (page.className === '') {
     page.className = 'pop';
   } else {
@@ -29,15 +29,15 @@ portfolio.addEventListener ('click', function() {
   }
 });
 
-about.addEventListener('click', function() {
+about.addEventListener('click', function home() {
   if (page.className === '') {
     page.className = 'pop';
-   } else {
+  } else {
     page.className = '';
   }
 });
     
-contact.addEventListener('click',function() {
+contact.addEventListener('click', function home() {
   if (page.className === '') {
     page.className = 'pop';
   } else {
@@ -50,10 +50,10 @@ const projectItems = {
   title: 'Keeping track of hundreds of components website.',
   skillTag: ['html', 'Bootstrap', 'Ruby on Rails'],
   summary: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
-  liveButton:'See Live',
+  liveButton: 'See Live',
   sourceButton: 'See Source',
 };
-
+const [var1 ,var2, var3] = projectItems.skillTag
 // Create Dynamic Page
 const grand = document.querySelector('.show-inactive');
 const parent = document.querySelector('.featured-item');
@@ -90,13 +90,13 @@ exit.className = 'exit';
 // Append Skill
 li.appendChild(html);
 html.className = 'pop-lists';
-html.textContent = projectItems.skillTag[0];
+html.textContent = var1;
 li.appendChild(bootstrap);
 bootstrap.className = 'pop-lists';
-bootstrap.textContent = projectItems.skillTag[1];
+bootstrap.textContent = var2;
 li.appendChild(rails);
 rails.className = 'pop-lists';
-rails.textContent = projectItems.skillTag[2];
+rails.textContent = var3;
 parent.appendChild(li);
 li.className = 'skills';
 
@@ -130,7 +130,7 @@ sourceImg.innerHTML = '<img class="s-img" src="./image/github.png"/>';
 
 // Event Listener for btn0
 const btn0 = document.querySelector('#btn-0');
-btn0.addEventListener('click', function() {
+btn0.addEventListener('click', function clicky() {
   if (grand.className === 'show') {
     grand.className = 'show-inactive';
   } else {
@@ -139,7 +139,7 @@ btn0.addEventListener('click', function() {
 });
 
 // Make Modal disappear
-exit.addEventListener('click', function() {
+exit.addEventListener('click', function clicky() {
   if (grand.className === 'show-inactive') {
     grand.className = 'show';
   } else {
@@ -148,7 +148,7 @@ exit.addEventListener('click', function() {
 });
 
 // Event Listener for Button 1
-btn1.addEventListener('click', function() {
+btn1.addEventListener('click', function clicky() {
   if (grand.className === 'show-inactive') {
     grand.className = 'show';
   } else {
@@ -157,7 +157,7 @@ btn1.addEventListener('click', function() {
 });
 
 // Event Listener for Button 2
-btn2.addEventListener('click', function() {
+btn2.addEventListener('click', function clicky() {
   if (grand.className === 'show-inactive') {
     grand.className = 'show';
   } else {
@@ -166,7 +166,7 @@ btn2.addEventListener('click', function() {
 });
 
 // Event Listener for Button 3
-btn3.addEventListener('click', function() {
+btn3.addEventListener('click', function clicky() {
   if (grand.className === 'show-inactive') {
     grand.className = 'show';
   } else {
@@ -175,7 +175,7 @@ btn3.addEventListener('click', function() {
 });
 
 // Button 4 Event Listener
-btn4.addEventListener ('click', function() {
+btn4.addEventListener ('click', function clicky() {
   if (grand.className === 'show-inactive') {
     grand.className = 'show';
   } else {
@@ -184,7 +184,7 @@ btn4.addEventListener ('click', function() {
 });
 
 // Button 5
-btn5.addEventListener ('click', function() {
+btn5.addEventListener ('click', function clicky() {
   if (grand.className === 'show-inactive') {
     grand.className = 'show';
   } else {
@@ -193,7 +193,7 @@ btn5.addEventListener ('click', function() {
 });
 
 // Button 6
-btn6.addEventListener('click', function() {
+btn6.addEventListener('click', function clicky() {
   if (grand.className === 'show-inactive') {
     grand.className = 'show';
   } else {
