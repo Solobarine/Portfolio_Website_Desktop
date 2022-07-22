@@ -5,7 +5,7 @@ const portfolio = document.querySelector('.the-nav1');
 const about = document.querySelector('.the-nav2');
 const contact = document.querySelector('.the-nav3');
 
-open.addEventListener ('click', function() {
+open.addEventListener('click', function() {
   if (page.className === 'pop') {
     page.className = '';
   } else {
@@ -13,45 +13,45 @@ open.addEventListener ('click', function() {
   }
 });
 
-imgButton.addEventListener ('click', function() {
-    if (page.className === '') {
+imgButton.addEventListener('click', function() {
+  if (page.className === '') {
     page.className = 'pop';
-    } else {
+  } else {
     page.className = '';
   }
 });
 
 portfolio.addEventListener ('click', function() {
-    if (page.className === '') {
-        page.className = 'pop';
-    } else {
-    page.className = '';
-  }
-});
-    
-about.addEventListener ('click', function() {
-    if (page.className === '') {
-    page.className = 'pop';
-    } else {
-    page.className = '';
-  }
-});
-    
-contact.addEventListener ('click', function() {
   if (page.className === '') {
-        page.className = 'pop';
-    } else {
+    page.className = 'pop';
+  } else {
+    page.className = '';
+  }
+});
+
+about.addEventListener('click', function() {
+  if (page.className === '') {
+    page.className = 'pop';
+   } else {
+    page.className = '';
+  }
+});
+    
+contact.addEventListener('click',function() {
+  if (page.className === '') {
+    page.className = 'pop';
+  } else {
     page.className = '';
   }
 });
 
 // Popup Window
 const projectItems = {
-  title:'Keeping track of hundreds of components website.',
-  skillTag:['html', 'Bootstrap', 'Ruby on Rails'],
-  summary:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
+  title: 'Keeping track of hundreds of components website.',
+  skillTag: ['html', 'Bootstrap', 'Ruby on Rails'],
+  summary: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
   liveButton:'See Live',
-  sourceButton: 'See Source'
+  sourceButton: 'See Source',
 };
 
 // Create Dynamic Page
@@ -65,7 +65,7 @@ const bootstrap = document.createElement('li');
 const rails = document.createElement('li');
 const project = document.createElement('div');
 const text = document.createElement('p');
-const live = document.createElement('button'); 
+const live = document.createElement('button');
 const liveImg = document.createElement('span');
 const source = document.createElement('button');
 const sourceImg = document.createElement('span');
@@ -130,7 +130,7 @@ sourceImg.innerHTML = '<img class="s-img" src="./image/github.png"/>';
 
 // Event Listener for btn0
 const btn0 = document.querySelector('#btn-0');
-btn0.addEventListener ('click', function() {
+btn0.addEventListener('click', function() {
   if (grand.className === 'show') {
     grand.className = 'show-inactive';
   } else {
@@ -139,7 +139,7 @@ btn0.addEventListener ('click', function() {
 });
 
 // Make Modal disappear
-exit.addEventListener ('click', function() {
+exit.addEventListener('click', function() {
   if (grand.className === 'show-inactive') {
     grand.className = 'show';
   } else {
@@ -148,7 +148,7 @@ exit.addEventListener ('click', function() {
 });
 
 // Event Listener for Button 1
-btn1.addEventListener ('click', function() {
+btn1.addEventListener('click', function() {
   if (grand.className === 'show-inactive') {
     grand.className = 'show';
   } else {
@@ -157,7 +157,7 @@ btn1.addEventListener ('click', function() {
 });
 
 // Event Listener for Button 2
-btn2.addEventListener ('click', function() {
+btn2.addEventListener('click', function() {
   if (grand.className === 'show-inactive') {
     grand.className = 'show';
   } else {
@@ -166,7 +166,7 @@ btn2.addEventListener ('click', function() {
 });
 
 // Event Listener for Button 3
-btn3.addEventListener ('click', function() {
+btn3.addEventListener('click', function() {
   if (grand.className === 'show-inactive') {
     grand.className = 'show';
   } else {
@@ -193,7 +193,7 @@ btn5.addEventListener ('click', function() {
 });
 
 // Button 6
-btn6.addEventListener ('click', function () {
+btn6.addEventListener('click', function() {
   if (grand.className === 'show-inactive') {
     grand.className = 'show';
   } else {
