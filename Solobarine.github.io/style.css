@@ -115,7 +115,7 @@ header {
   .topnav .bars {
     display: none;
   }
-  
+
   .topnav a:not(:first-child) {
     display: block;
   }
@@ -842,7 +842,7 @@ header {
     justify-content: center;
     margin: 25px 0;
   }
-  
+
   .pop-menu {
     width: auto;
     background: #1c1a19;
@@ -863,7 +863,7 @@ header {
   }
 
   .img-button {
-  width: 100%;
+    width: 100%;
     height: 100%;
   }
 

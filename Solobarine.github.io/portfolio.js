@@ -8,7 +8,7 @@ const contact = document.querySelector('.the-nav3');
 const header = document.querySelector('.header');
 
 open.addEventListener('click', () => {
-  if (page.className === 'pop'){
+  if (page.className === 'pop') {
     page.className = '';
     header.style.display = 'none';
   } else {
@@ -17,7 +17,7 @@ open.addEventListener('click', () => {
 });
 
 imgButton.addEventListener('click', () => {
-  if(page.className === ''){
+  if (page.className === '') {
     page.className = 'pop';
     header.style.display = 'block';
   } else {
@@ -26,7 +26,7 @@ imgButton.addEventListener('click', () => {
 });
 
 portfolio.addEventListener('click', () => {
-  if(page.className === ''){
+  if (page.className === '') {
     page.className = 'pop';
     header.style.display = 'block';
   } else {
@@ -35,7 +35,7 @@ portfolio.addEventListener('click', () => {
 });
 
 about.addEventListener('click', () => {
-  if(page.className === ''){
+  if (page.className === '') {
     page.className = 'pop';
     header.style.display = 'block';
   } else {
@@ -44,8 +44,8 @@ about.addEventListener('click', () => {
 });
 
 contact.addEventListener('click', () => {
-  if (page.className === ''){
-     page.className = 'pop';
+  if (page.className === '') {
+    page.className = 'pop';
     header.style.display = 'block';
   } else {
     page.className = '';
