@@ -27,7 +27,7 @@ const msg = document.querySelector('#error');
       }
     }
     
-    form.addeEventListener('submit', (check) => {
-      check.preventDefault();
-      error(mail.value)
-    })
+    form.addeEventListener('submit', (event) => {
+      event.preventDefault();
+      error(mail.value);
+    });
