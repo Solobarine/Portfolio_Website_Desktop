@@ -855,33 +855,34 @@ header {
 
 #close {
   float: right;
-  margin-top: 15px;
-  margin-right: 15px;
-  width: 45px;
-  height: 45px;
+  margin-top: 10px;
+  margin-right: 10px;
+  width: 15px;
+  height: 15px;
+}
+
+.img-button {
+  width: 100%;
+  height: 100%;
 }
 
 .nav-tools {
   font-family: 'Inter', sans-serif;
-  font-size: 32px;
+  font-size: 22px;
   line-height: 44px;
   color: #fff5e1;
   list-style: none;
   width: 270px;
-  margin-top: 30px;
+  margin-top: 10px;
   border-bottom: 1px solid #ccc;
   overflow-y: hidden;
 }
 
 .first-tool {
-  padding-top: 60px;
+  padding-top: 20px;
 }
 
 li a:link {
-  text-decoration: none;
-}
-
-li a:visted {
   text-decoration: none;
 }
 
@@ -896,7 +897,7 @@ li a:visted {
 }
 
 .space {
-  height: 250px;
+  height: 320px;
+  background: #1c1a19;
 }
-
 }
