@@ -1,55 +1,33 @@
-let open = document.querySelector("#bars");
-let imgButton = document.querySelector(".img-button");
-let page = document.querySelector(".pop-up");
-let portfolio = document.querySelector(".the-nav1");
-let about = document.querySelector(".the-nav2");
-let contact = document.querySelector(".the-nav3");
-
-
-open.addEventListener('click', function(){
-  if(page.className === 'pop'){
-    page.className = '';
-  }else{
-    page.className = 'pop';
-  }
-});
-
-imgButton.addEventListener('click', function(){
-    if(page.className === ''){
-        page.className = 'pop';
-    }else{
-        page.className = '';
-    }
-    });
-    
-portfolio.addEventListener('click', function(){
-    if(page.className === ''){
-        page.className = 'pop';
-    }else{
-        page.className = '';
-    }
-    });
-    
-about.addEventListener('click', function(){
-    if(page.className === ''){
-        page.className = 'pop';
-    }else{
-        page.className = '';
-    }
-    });
-    
-contact.addEventListener('click', function(){
-    if(page.className === ''){
-        page.className = 'pop';
-    }else{
-        page.className = '';
-    }
-    });
-    
     //Validation for Contact Section
-const form = document.getElementById('#form');
+const form = document.getElementById('form');
 const mail = document.getElementById('email');
 const contactButton = document.querySelector('.sub-button');
 const msg = document.querySelector('#error');
     
-contactButton.addEventListener('submit', inspectInputs);
+    // Error Message function
+    function error(input) {
+      const inputcase = input.toLowerCase();
+      const regex = /@+./;
+      
+      //Test input value
+      if (inputcase !== input) {
+        msg.innerText = 'Please, enter a lower case input';
+        msg.className = 'error-pop';
+        return false;
+      }
+      if (!regex.test(input)) {
+        msg.innerText = 'Your Email should have @ and . . Kindly add those';
+        msg.className = 'error-pop';
+        return false;
+      }
+      if (inputcase === input) {
+        msg.innerText = 'Sucessful';
+        form.submit();
+        return true;
+      }
+    }
+    
+    form.addeEventListener('submit', (check) => {
+      check.preventDefault();
+      error(mail.value)
+    })
