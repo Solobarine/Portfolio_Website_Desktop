@@ -1,3 +1,5 @@
+document.addEventListener('DOMContentLoaded', () => {
+  
 const open = document.querySelector('#bars');
 const imgButton = document.querySelector('.img-button');
 const page = document.querySelector('.pop-up');
@@ -45,200 +47,257 @@ contact.addEventListener('click', () => {
   }
 });
 
-// Popup Window
-const projectItems = {
-  title: 'Multi Post Stories',
-  skillTag: ['html', 'Bootstrap', 'Ruby on Rails'],
-  summary: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
-  liveButton: 'See Live',
-  sourceButton: 'See Source',
-};
-const projectItems1 = {
-  title: 'Multi Post Stories',
-  skillTag: ['html', 'Bootstrap', 'Ruby on Rails'],
-  summary: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
-  liveButton: 'See Live',
-  sourceButton: 'See Source',
-};
-const projectItems2 = {
-  title: 'Multi Post Stories',
-  skillTag: ['html', 'Bootstrap', 'Ruby on Rails'],
-  summary: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
-  liveButton: 'See Live',
-  sourceButton: 'See Source',
-};
-const projectItems3 = {
-  title: 'Multi Post Stories',
-  skillTag: ['html', 'Bootstrap', 'Ruby on Rails'],
-  summary: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
-  liveButton: 'See Live',
-  sourceButton: 'See Source',
-};
-const projectItems4 = {
-  title: 'Multi Post Stories',
-  skillTag: ['html', 'Bootstrap', 'Ruby on Rails'],
-  summary: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
-  liveButton: 'See Live',
-  sourceButton: 'See Source',
-};
-const projectItems5 = {
-  title: 'Multi Post Stories',
-  skillTag: ['html', 'Bootstrap', 'Ruby on Rails'],
-  summary: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
-  liveButton: 'See Live',
-  sourceButton: 'See Source',
-};
-const projectItems6 = {
-  title: 'Multi Post Stories',
-  skillTag: ['html', 'Bootstrap', 'Ruby on Rails'],
-  summary: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
-  liveButton: 'See Live',
-  sourceButton: 'See Source',
-};
-const [var1, var2, var3] = projectItems.skillTag;
 // Create Dynamic Page
 const grand = document.querySelector('.show-inactive');
-const parent = document.querySelector('.featured-item');
-const exit = document.createElement('button');
-const heading = document.createElement('h2');
-const li = document.createElement('ul');
-const html = document.createElement('li');
-const bootstrap = document.createElement('li');
-const rails = document.createElement('li');
-const project = document.createElement('div');
-const text = document.createElement('p');
-const live = document.createElement('button');
-const liveImg = document.createElement('span');
-const source = document.createElement('button');
-const sourceImg = document.createElement('span');
+const content = document.querySelector('.featured-item');
+const heading = document.querySelector('.pop-title');
+const exit = document.querySelector('.exit');
+const html = document.querySelector('#l-1');
+const bootstrap = document.querySelector('#l-2');
+const rails = document.querySelector('#l-3');
+const project = document.querySelector('.pro-image');
+const text = document.querySelector('.short-summary');
+const live = document.querySelector('.pop-button-l');
+const source = document.querySelector('.pop-button-s');
+const img1 = document.querySelector('.l-img')
+const img2 = document.querySelector('.s-img')
 
-const btn1 = document.querySelector('.btn-1');
-const btn2 = document.querySelector('.btn-2');
-const btn3 = document.querySelector('.btn-3');
-const btn4 = document.querySelector('.btn-4');
-const btn5 = document.querySelector('.btn-5');
-const btn6 = document.querySelector('.btn-6');
+// Popup Window
+const projectItems = [{
+  title: 'Multi Post Stories',
+  close: 'x',
+  skillTag: ['html', 'Bootstrap', 'Ruby on Rails'],
+  imgSrc: './image/portfolio-snapshot.png',
+  summary: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
+  liveButton: 'See Live',
+  liveImg: './image/live-img.png',
+  sourceButton: 'See Source',
+  sourceImg: './img/github.png'
+},
+{
+  title: 'Descriptive Projects',
+  close: 'x',
+  skillTag: ['html', 'Bootstrap', 'Ruby on Rails'],
+  imgSrc: './image/portfolio-snapshot.png',
+  summary: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
+  liveButton: 'See Live',
+  liveImg: './image/live-img.png',
+  sourceButton: 'See Source',
+  sourceImg: './img/github.png'
+},
+{
+  title: 'Multi Post Stories',
+  close: 'x',
+  skillTag: ['html', 'Bootstrap', 'Ruby on Rails'],
+  imgSrc: './image/portfolio-snapshot.png',
+  summary: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
+  liveButton: 'See Live',
+  liveImg: './image/live-img.png',
+  sourceButton: 'See Source',
+  sourceImg: './img/github.png'
+},
+{
+  title: 'Too much Projects',
+  close: 'x',
+  skillTag: ['html', 'Bootstrap', 'Ruby on Rails'],
+  imgSrc: './image/portfolio-snapshot.png',
+  summary: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
+  liveButton: 'See Live',
+  liveImg: './image/live-img.png',
+  sourceButton: 'See Source',
+  sourceImg: './img/github.png'
+},
+{
+  title: 'Looking for more Projects?',
+  close: 'x',
+  skillTag: ['html', 'Bootstrap', 'Ruby on Rails'],
+  imgSrc: './image/portfolio-snapshot.png',
+  summary: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
+  liveButton: 'See Live',
+  liveImg: './image/live-img.png',
+  sourceButton: 'See Source',
+  sourceImg: './img/github.png'
+},
+{
+  title: 'Torture',
+  close: 'x',
+  skillTag: ['html', 'Bootstrap', 'Ruby on Rails'],
+  imgSrc: './image/portfolio-snapshot.png',
+  summary: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
+  liveButton: 'See Live',
+  liveImg: './image/live-img.png',
+  sourceButton: 'See Source',
+  sourceImg: './img/github.png'
+},
+{
+  title: 'End These Projects ',
+  close: 'x',
+  skillTag: ['html', 'Bootstrap', 'Ruby on Rails'],
+  imgSrc: './image/portfolio-snapshot.png',
+  summary: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
+  liveButton: 'See Live',
+  liveImg: './image/live-img.png',
+  sourceButton: 'See Source',
+  sourceImg: './img/github.png'
+}];
 
-// Append heading
-heading.textContent = projectItems.title;
-heading.className = 'pop-title';
-parent.appendChild(heading);
+const rem = [{
+  title: '',
+  close: '',
+  skillTag: ['', '', ''],
+  imgSrc: '',
+  summary: '',
+  liveButton: '',
+  sourceButton: ''
+},
+{
+  title: '',
+  close: '',
+  skillTag: ['', '', ''],
+  imgSrc: '',
+  summary: '',
+  liveButton: '',
+  sourceButton: ''
+},
+{
+  title: '',
+  close: '',
+  skillTag: ['', '', ''],
+  imgSrc: '',
+  summary: '',
+  liveButton: '',
+  sourceButton: ''
+},
+{
+  title: '',
+  close: '',
+  skillTag: ['', '', ''],
+  imgSrc: '',
+  summary: '',
+  liveButton: '',
+  sourceButton: ''
+},
+{
+  title: '',
+  close: '',
+  skillTag: ['', '', ''],
+  imgSrc: '',
+  summary: '',
+  liveButton: '',
+  sourceButton: ''
+},
+{
+  title: '',
+  close: '',
+  skillTag: ['', '', ''],
+  imgSrc: '',
+  summary: '',
+  liveButton: '',
+  sourceButton: ''
+},
+{
+  title: '',
+  close: '',
+  skillTag: ['', '', ''],
+  imgSrc: '',
+  summary: '',
+  liveButton: '',
+  sourceButton: ''
+}
+];
 
-// Append Exit
-parent.appendChild(exit);
-exit.textContent = 'x';
-exit.className = 'exit';
 
-// Append Skill
-li.appendChild(html);
-html.className = 'pop-lists';
-html.textContent = var1;
-li.appendChild(bootstrap);
-bootstrap.className = 'pop-lists';
-bootstrap.textContent = var2;
-li.appendChild(rails);
-rails.className = 'pop-lists';
-rails.textContent = var3;
-parent.appendChild(li);
-li.className = 'skills';
+function remove(g, array){
+  const ject = array[g];
+  content.style.display = 'none';
+  grand.style.display = 'none';
+  heading.innerHTML = ject.title;
+  exit.innerHTML = ject.close;
+  const s = ject.skillTag;
+  const [x, y, z] = s;
+  html.innerHTML = x;
+  bootstrap.innerHTML = y;
+  rails.innerHTML = z;
+  project.src = ject.imgSrc;
+  text.innerHTML = ject.summary;
+  live.innerHTML = ject.liveButton;
+  source.innerHTML = ject.sourceButton;
 
-// Append Project Image
-project.innerHTML = '<img class="project-image" src="./image/portfolio-snapshot.png"/>';
-project.className = 'pro-image';
-parent.appendChild(project);
+}
 
-// Append text
-parent.appendChild(text);
-text.textContent = projectItems.summary;
-text.className = 'short-summary';
-
-// Append Live button
-parent.appendChild(live);
-live.textContent = projectItems.liveButton;
-live.className = 'pop-button-l';
-
-// Append Source
-parent.appendChild(source);
-source.textContent = projectItems.sourceButton;
-source.className = 'pop-button-s';
-
-// Append Image to live
-live.appendChild(liveImg);
-liveImg.innerHTML = '<img class="l-img" src="./image/live-img.png"/>';
-
-// Append Image to source
-source.appendChild(sourceImg);
-sourceImg.innerHTML = '<img class="s-img" src="./image/github.png"/>';
-
-// Event Listener for btn0
-const btn0 = document.querySelector('#btn-0');
-btn0.addEventListener('click', () => {
-  if (grand.className === 'show') {
-    grand.className = 'show-inactive';
-  } else {
-    grand.className = 'show';
+function projects(n,arr){
+  let pro = arr[n];
+  heading.innerHTML = pro.title;
+  exit.innerHTML = pro.close;
+  function clear() {
+  remove(n, rem);
   }
-});
+  exit.addEventListener('click', clear);
+  const a = pro.skillTag;
+  const [b, c, d] = a;
+  html.innerHTML = b;
+  bootstrap.innerHTML = c;
+  rails.innerHTML = d;
+  project.src = pro.imgSrc;
+  text.innerHTML = pro.summary;
+  live.innerHTML = pro.liveButton;
+  source.innerHTML = pro.sourceButton;
+}
 
-// Make Modal disappear
-exit.addEventListener('click', () => {
-  if (grand.className === 'show-inactive') {
-    grand.className = 'show';
-  } else {
-    grand.className = 'show-inactive';
-  }
-});
+function pop0()  {
+  projects(0, projectItems);
+  content.style.display = 'grid';
+  grand.style.display = 'block';
 
-// Event Listener for Button 1
-btn1.addEventListener('click', () => {
-  if (grand.className === 'show-inactive') {
-    grand.className = 'show';
-  } else {
-    grand.className = 'show-inactive';
-  }
-});
+}
 
-// Event Listener for Button 2
-btn2.addEventListener('click', () => {
-  if (grand.className === 'show-inactive') {
-    grand.className = 'show';
-  } else {
-    grand.className = 'show-inactive';
-  }
-});
+function pop1(){
+  projects(1, projectItems);
+  content.style.display = 'grid';
+  grand.style.display = 'block';
+}
 
-// Event Listener for Button 3
-btn3.addEventListener('click', () => {
-  if (grand.className === 'show-inactive') {
-    grand.className = 'show';
-  } else {
-    grand.className = 'show-inactive';
-  }
-});
+function pop2(){
+  projects(2, projectItems);
+  content.style.display = 'grid';
+  grand.style.display = 'block';
+}
 
-// Button 4 Event Listener
-btn4.addEventListener('click', () => {
-  if (grand.className === 'show-inactive') {
-    grand.className = 'show';
-  } else {
-    grand.className = 'show-inactive';
-  }
-});
+function pop3(){
+  projects(3, projectItems);
+  content.style.display = 'grid';
+  grand.style.display = 'block';
+}
 
-// Button 5
-btn5.addEventListener('click', () => {
-  if (grand.className === 'show-inactive') {
-    grand.className = 'show';
-  } else {
-    grand.className = 'show-inactive';
-  }
-});
+function pop4(){
+  projects(4, projectItems);
+  content.style.display = 'grid';
+  grand.style.display = 'block';
+}
 
-// Button 6
-btn6.addEventListener('click', () => {
-  if (grand.className === 'show-inactive') {
-    grand.className = 'show';
-  } else {
-    grand.className = 'show-inactive';
-  }
+function pop5(){
+  projects(5, projectItems);
+  content.style.display = 'grid';
+  grand.style.display = 'block';
+}
+
+function pop6(){
+  projects(6, projectItems);
+  content.style.display = 'grid';
+  grand.style.display = 'block';
+}
+
+document.querySelector('#btn-0').addEventListener('click',pop0);
+
+document.querySelector('#btn-1').addEventListener('click', pop1);
+
+document.querySelector('#btn-2').addEventListener('click',pop2);
+
+document.querySelector('#btn-3').addEventListener('click', pop3);
+
+document.querySelector('#btn-4').addEventListener('click', pop4);
+
+document.querySelector('#btn-5').addEventListener('click', pop5);
+
+document.querySelector('#btn-6').addEventListener('click', pop6);
 });

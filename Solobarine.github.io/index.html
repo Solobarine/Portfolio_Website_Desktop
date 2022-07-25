@@ -13,9 +13,7 @@
   <title>Akpuru Solomon Website</title>
 </head>
 <body>
-  <div class="show-inactive">
-    <div class="featured-item" ></div>
-    </div>
+
   <div id="container">
    <header>
       <div class="topnav" id="myTopnav">
@@ -25,11 +23,11 @@
         <a href="#works" class="active">Portfolio</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
-    
+
       </div>
     </header>
     <div class="pop-up pop" id="pop-menu">
-  <button id="close" onclick="closeWindow()"><img class="img-button" src="./image/cancel-btn.png" alt="Close Window Button" /></button>
+  <button id="close"><img class="img-button" src="./image/cancel-btn.png" alt="Close Window Button" /></button>
   <ul class="navigation">
     <li class="nav-tools first-tool" ><a class="the-nav1" href="#work">Portfolio</a></li>
     <li class="nav-tools"><a class="the-nav2" href="#about_section">About</a></li>
@@ -55,8 +53,23 @@
     <section id="work">
       <h2 id="work_title">My Recent Works</h2>
 
+  <div class="show-inactive">
+    <div class="featured-item" >
+      <h2 class="pop-title"></h2>
+      <a class="exit"></a>
+      <div class="enclose">
+        <li class="pop-lists" id="l-1"></li>
+        <li class="pop-lists" id="l-2"></li>
+        <li class="pop-lists" id="l-3"></li>
+        </div>
+      <img class="pro-image"/>
+      <p class="short-summary"></p>
+      <a class="pop-button-l" href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      <a class="pop-button-s" href="#"><i class="fa-brands fa-github-alt"></i></a>
+    </div>
+    </div>
       <div id="projects">
-        
+
         <div id="frames">
           <div id="recent-img"><img src="./image/recent.png" alt="My main project"></div>
           <h3 class="stories">Multi-Post Stories</h3>
@@ -67,7 +80,7 @@
             <span>Bootstrap</span>
             <span>Ruby</span>
           </div>
-          <div><button id="btn-0" class="button mainp-see" onclick="clickMe()" type="button">See project</button></div>
+          <div><button id="btn-0" class="button mainp-see" type="button">See project</button></div>
         </div>
 
         <div id="grid">
@@ -83,7 +96,7 @@
               <span>Bootstrap</span>
               <span>Ruby</span>
             </div>
-            <button onclick="clickMe()" class="btn-1 button pro_button" type="button">See project</button>
+            <button class="button pro_button" id="btn-1" type="button">See project</button>
           </div>
 
            <div class="show">
@@ -98,7 +111,7 @@
               <span>Bootstrap</span>
               <span>Ruby</span>
             </div>
-            <button class="btn-2 button pro_button" type="button">See project</button>
+            <button class="button pro_button" id="btn-2" type="button">See project</button>
           </div>
 
              <div class="show">
@@ -113,7 +126,7 @@
               <span>Bootstrap</span>
               <span>Ruby</span>
             </div>
-            <button class="btn-3 button pro_button" type="button">See project</button>
+            <button class="button pro_button" id="btn-3" type="button">See project</button>
           </div>
 
              <div class="show">
@@ -128,7 +141,7 @@
               <span>Bootstrap</span>
               <span>Ruby</span>
             </div>
-            <button class="btn-4 button pro_button" type="button">See project</button>
+            <button class="button pro_button"   id="btn-4" type="button">See project</button>
           </div>
 
              <div class="show">
@@ -143,7 +156,7 @@
               <span>Bootstrap</span>
               <span>Ruby</span>
             </div>
-            <button class="btn-5 button pro_button" type="button">See project</button>
+            <button class="button pro_button" id="btn-5" type="button">See project</button>
           </div>
 
              <div class="show">
@@ -158,7 +171,7 @@
               <span>Bootstrap</span>
               <span>Ruby</span>
             </div>
-            <button class="btn-6 button pro_button" type="button">See project</button>
+            <button class="button pro_button" id="btn-6" type="button">See project</button>
           </div>
         </div>
       </div>
